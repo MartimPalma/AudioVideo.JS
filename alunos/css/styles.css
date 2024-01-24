@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100vh;
+  background-color: #030303;
+  overflow: hidden;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+#cozinha {
+  background-image: url("../assets/images/cozinha.jpg");
+}
+
+#sala {
+  background-image: url("../assets/images/tv.jpg");
+}
+
+#jardim {
+  background-image: url("../assets/images/jardim.jpg");
+}
+
+#tv {
+  /* width: 1200px;
+    top: 4%;
+    left: calc(50% - 600px); */
+  width: 1400px;
+  top: 0;
+  left: calc(50% - 700px);
+  display: block;
+  z-index: 3;
+  position: absolute;
+}
+
+#canal {
+  width: 734px;
+  height: 450px;
+  margin-top: 14vh;
+  margin-left: calc(50% - 366px);
+  border-radius: 5px;
+}
+
+#comando {
+  width: 120px;
+  padding: 80px 35px 30px;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  z-index: 4;
+  background-color: #030303;
+  box-shadow: rgba(50, 50, 93, 0.5) 0px 50px 80px -20px,
+    rgba(255, 255, 255, 0.8) 0px 30px 40px -30px,
+    rgba(240, 240, 240, 0.4) 0px -2px 6px 0px inset;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#comando button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0 10px inset;
+}
+
+#desligar {
+  cursor: pointer;
+  width: 25px !important;
+  height: 25px !important;
+  background-color: #fe4f40;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+#controlos {
+  max-width: 50px;
+  height: 192px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  border-radius: 50%;
+}
+
+#controlos button {
+  cursor: pointer;
+  background-color: rgb(255, 153, 39);
+  padding: 10px 20px;
+  color: rgb(9, 32, 63);
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: none;
+}
+
+#aumenta {
+  border-radius: 50% 50% 0 0;
+}
+
+#diminui {
+  border-radius: 0 0 50% 50%;
+}
+
+#pausa {
+  border-radius: 50%;
+  font-size: 0.9rem;
+}
+
+#controlos span {
+  display: block;
+  width: 50px;
+  background-color: rgb(255, 153, 39);
+  text-align: center;
+  padding: 2px 0;
+  font-size: 0.9rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+#canais {
+  max-width: 60px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#canais button {
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: rgb(255, 153, 39);
+  border-radius: 50%;
+  color: rgb(9, 32, 63);
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* box-shadow: rgb(255 153 39 / 30%) 0px 3px, rgb(255 153 39 / 20%) 0px 6px,
+      rgb(255 153 39 / 10%) 0px 9px, rgb(255 153 39 / 5%) 0px 12px; */
+}
+
+#mute {
+  width: 200px;
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 100px);
+  z-index: 10;
+  font-family: inherit;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
+#irSala {
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 40px;
+  z-index: 8;
+  background-color: rgb(255, 153, 39);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #131313;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#irCozinha {
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 40px;
+  z-index: 8;
+  background-color: rgb(255, 153, 39);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #131313;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#irJardim {
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  border-radius: 20px;
+  position: absolute;
+  top: calc(50% - 100px);
+  right: 40px;
+  z-index: 8;
+  background-color: rgb(255, 153, 39);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #131313;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#gato {
+  width: 110px;
+  position: absolute;
+  left: 5px;
+  bottom: 31vh;
+}
+
+#jornal {
+  width: 75px;
+  position: absolute;
+  top: 54.5vh;
+  right: 32%;
+}
+
+#coluna {
+  width: 80px;
+  position: absolute;
+  top: 46.5vh;
+  left: 30%;
+}
+
+#cafe {
+  width: 80px;
+  position: absolute;
+  top: 53vh;
+  left: 59%;
+}
+
+#jsTrigger {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 153, 39);
+  border-radius: 18px;
+  padding: 15px 25px;
+  font-weight: bold;
+  color: rgb(255, 153, 39);
+}
+
+#jsInfo {
+  background-color: orange;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 300px;
+  border: 4px solid white;
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 150px);
+}
